@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title> html first assignment </title>
+<body>
+<table align="center">
+<table border="4px">
+<tr border="2px" height="300px" width="400px"> 
+<td height="300px" width="400px">
+<img src="govindia.png" height=300 width=400></td>
+<td height="300px" width="400px">
+Click on image 
+</td>
+<td height="300px" width="400px">
+<img src="deaths.png" width="394px">
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<a href="covid19.com" click here>
+<img src="logo-flag.png" height="250px" width="1200px"> </a>
+</td>
+ </tr>
+<tr>
+<td  colspan="4" height="150" width="1200">
+what is covid 19?<br>
+which precautions we have to take?<br>
+<br>
+
+</tr>
+</td>  
+<tr>
+<td colspan="2" height="300" width="600" >
+<h1><p>Symptoms:The most common symptoms of COVID-19 are fever, tiredness, and
+dry cough. Some patients may have aches and pains, nasal
+congestion, runny nose, sore throat or diarrhea. These symptoms are
+usually mild and begin gradually.</h1>
+</td>
+<td colspan="2" height="300" width="600">
+<img src="activecase.png" height="300" width="600">
+</td>
+</tr>
+</table>
