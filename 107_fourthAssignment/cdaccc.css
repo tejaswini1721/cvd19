@@ -1,0 +1,38 @@
+body{
+			margin:0px;
+		}
+		.container{
+			height: 100vh;
+			display: grid;
+			 align-content: center;
+			 justify-content: center;
+			  
+
+		}
+			.beautify{
+			color: black;
+			font-family: monospace;
+			font-size: 4rem;
+		}
+		.title-container{
+			display: grid;
+			 justify-content: center;
+			  grid-template-columns: auto auto auto auto;
+
+
+		}
+		.input{
+			width: 40vw;
+			height: 7vh;
+			border-radius: 25px;
+			border-color: black;
+		}
+		.c{
+			color: royalblue;
+		}
+		.d{
+			color: tomato;
+		}
+		.a{
+			color: gold;
+		}

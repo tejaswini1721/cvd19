@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="cdac.css">
+
+</head>
+<body>
+	<div class="container beautify">
+		<div class="title-container">
+		<span class="c">C</span>
+		<span class="d">D</span>
+		<span class="a">A</span>
+		<span class="c">C</span>
+	</div>
+	
+	<div>
+		<input class="input" type="text" name="" id="">
+	</div>
+</div>
+
+</body>
+</html>
