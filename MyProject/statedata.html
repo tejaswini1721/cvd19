@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <title>state-data</title>
+    <style type="text/css">
+      header {
+        width: 100%;
+        height: 12vh;
+        background: linear-gradient(57deg, #00c6a7, #1e4d92);
+      }
+
+      div.head {
+        float: right;
+      }
+
+      div.title-head {
+        padding: 5px 5px;
+        padding-left: 25px;
+      }
+
+      nav {
+        display: flex;
+      }
+
+      div.title-head {
+        width: 40%;
+        height: 100px;
+      }
+
+      div.head {
+        width: 60%;
+        height: 100px;
+      }
+
+      div.head ul {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      ul {
+        list-style-type: none;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+      }
+
+      ul li a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+
+      div.second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      div.dashboard {
+        margin: 25px;
+        color: gray;
+      }
+
+      div.active {
+        width: 200px;
+        height: 100px;
+
+        background: linear-gradient(57deg, red, yellow);
+        padding: 10px 10px 15px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 0;
+      }
+
+      div.cured {
+        width: 200px;
+        height: 100px;
+        background: linear-gradient(57deg, green, yellow);
+        padding: 10px 10px 15px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 0;
+      }
+
+      div.deaths {
+        width: 200px;
+        height: 100px;
+
+        background: linear-gradient(57deg, blue, yellow);
+        padding: 10px 10px 15px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 0;
+      }
+    </style>
+    <!--CSS file link-->
+    <link rel="stylesheet" href="text1.css" />
+  </head>
+  <body style="width: 100%; margin-left: 0px; margin-top: 0px;">
+    <header class="site-header">
+      <nav>
+      <div class="title-head">
+        <h2><img src="logo-flag.png" alt="India Flag" height="30" width="40" style="margin-top: 15px" />
+          COVID-19:Survey of India
+        </h2>
+          <!--<input type="text" placeholder="Search..">
+			<button type="submit">search</button>-->
+        </div>
+        <div class="head">
+          <!--<input type="text" placeholder="Search..">
+			<button type="submit">search</button>-->
+          <ul>
+            <li><a class="active" href="demo5project.html" target="blank">Home</a></li>
+            <li><a href="#about" target="blank">About</a></li>
+            <li><a href="contact.html" target="blank">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--State data-->
+  
+    
+    <section id="state-data" class="site-update">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2><a class="open-table" href="#"> COVID-19 Statewise Status</a></h2>
+            <div class="data-table table-responsive">
+              <table border="1" cellspacing="1" cellpadding="1" class="table table-striped" style="font-weight:bold">
+    <thead>
+      <tr>
+        <th><strong>S. No.</strong></th>
+        <th><strong>Name of State / UT</strong></th>
+        <th><strong>Total Confirmed cases* </strong></th>
+        <th><strong>Cured/Discharged/Migrated</strong></th>
+        <th><strong>Deaths**</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Andaman and Nicobar Islands</td>
+        <td>33</td>
+        <td>33</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Andhra Pradesh</td>
+        <td>2532</td>
+        <td>1621</td>
+        <td>52</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Arunachal Pradesh</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Assam</td>
+        <td>142</td>
+        <td>41</td>
+        <td>4</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Bihar</td>
+        <td>1498</td>
+        <td>534</td>
+        <td>9</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>Chandigarh</td>
+        <td>200</td>
+        <td>57</td>
+        <td>3</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>Chhattisgarh</td>
+        <td>101</td>
+        <td>59</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Dadar Nagar Haveli</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td>Delhi</td>
+        <td>10554</td>
+        <td>4750</td>
+        <td>168</td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+        <td>Goa</td>
+        <td>46</td>
+        <td>7</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+        <td>Gujarat</td>
+        <td>12140</td>
+        <td>5043</td>
+        <td>719</td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+        <td>Haryana</td>
+        <td>964</td>
+        <td>627</td>
+        <td>14</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+        <td>Himachal Pradesh</td>
+        <td>92</td>
+        <td>47</td>
+        <td>3</td>
+      </tr>
+
+      <tr>
+        <td>14</td>
+        <td>Jammu and Kashmir</td>
+        <td>1317</td>
+        <td>653</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Jharkhand</td>
+        <td>231</td>
+        <td>127</td>
+        <td>3</td>
+      </tr>
+
+      <tr>
+        <td>16</td>
+        <td>Karnataka</td>
+        <td>1397</td>
+        <td>544</td>
+        <td>40</td>
+      </tr>
+
+      <tr>
+        <td>17</td>
+        <td>Kerala</td>
+        <td>642</td>
+        <td>497</td>
+        <td>4</td>
+      </tr>
+
+      <tr>
+        <td>18</td>
+        <td>Ladakh</td>
+        <td>43</td>
+        <td>43</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>19</td>
+        <td>Madhya Pradesh</td>
+        <td>5465</td>
+        <td>2630</td>
+        <td>258</td>
+      </tr>
+
+      <tr>
+        <td>20</td>
+        <td>Maharashtra</td>
+        <td>37136</td>
+        <td>9639</td>
+        <td>1325</td>
+      </tr>
+
+      <tr>
+        <td>21</td>
+        <td>Manipur</td>
+        <td>9</td>
+        <td>2</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Meghalaya</td>
+        <td>13</td>
+        <td>12</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td>23</td>
+        <td>Mizoram</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>24</td>
+        <td>Odisha</td>
+        <td>978</td>
+        <td>277</td>
+        <td>5</td>
+      </tr>
+
+      <tr>
+        <td>25</td>
+        <td>Puducherry</td>
+        <td>18</td>
+        <td>9</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td>26</td>
+        <td>Punjab</td>
+        <td>2002</td>
+        <td>1642</td>
+        <td>38</td>
+      </tr>
+
+      <tr>
+        <td>27</td>
+        <td>Rajasthan</td>
+        <td>5845</td>
+        <td>3337</td>
+        <td>143</td>
+      </tr>
+
+      <tr>
+        <td>28</td>
+        <td>Tamil Nadu</td>
+        <td>12448</td>
+        <td>4895</td>
+        <td>84</td>
+      </tr>
+
+      <tr>
+        <td>29</td>
+        <td>Telengana</td>
+        <td>1634</td>
+        <td>1010</td>
+        <td>38</td>
+      </tr>
+
+      <tr>
+        <td>30</td>
+        <td>Tripura</td>
+        <td>173</td>
+        <td>116</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>31</td>
+        <td>Uttarakhand</td>
+        <td>111</td>
+        <td>52</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td>32</td>
+        <td>Uttar Pradesh</td>
+        <td>4926</td>
+        <td>2918</td>
+        <td>123</td>
+      </tr>
+
+      <tr>
+        <td>33</td>
+        <td>West Bengal</td>
+        <td>2961</td>
+        <td>1074</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Cases being reassigned to states</td>
+        <td>1096</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
+   <!--Footer-->
+  <h4 id="foot" style="text-align: center;">Last Updated on 27-05-2020</h4>
+  <br>
+  <h4 style="text-align: center;">
+    <a href="demo5project.html" target="blank">Home</a> &ensp; &ensp;
+    <a href="feedback.html" target="blank">Feedback</a>&ensp; &ensp;
+    <a href="contact.html" target="blank">Contact us</a>&ensp; &ensp;
+    <a href="copyright.html" target="blank">&copy; copyright</a>
+  </h4>
+  <h6 style="text-align: center;">
+    &copy; Official website of Survey of India 2019.
+  </h6>
+  </body>
+</html>

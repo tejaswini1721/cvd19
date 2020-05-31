@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <title>COVDI-19</title>
+    <style type="text/css">
+      header {
+        width: 100%;
+        height: 12vh;
+        background: linear-gradient(57deg, #00c6a7, #1e4d92);
+      }
+
+      div.head {
+        float: right;
+      }
+
+      div.title-head {
+        padding: 5px 5px;
+        padding-left: 25px;
+      }
+
+      nav {
+        display: flex;
+      }
+
+      div.title-head {
+        width: 40%;
+        height: 100px;
+      }
+
+      div.head {
+        width: 60%;
+        height: 100px;
+      }
+
+      div.head ul {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      ul {
+        list-style-type: none;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+      }
+
+      ul li a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+
+      div.second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      div.dashboard {
+        margin: 25px;
+        color: gray;
+      }
+
+      div.active {
+        width: 200px;
+        height: 100px;
+
+        background: linear-gradient(57deg, red, yellow);
+        padding: 10px 10px 15px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 0;
+      }
+
+      div.cured {
+        width: 200px;
+        height: 100px;
+        background: linear-gradient(57deg, green, yellow);
+        padding: 10px 10px 15px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 0;
+      }
+
+      div.deaths {
+        width: 200px;
+        height: 100px;
+
+        background: linear-gradient(57deg, blue, yellow);
+        padding: 10px 10px 15px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="text1.css" />
+  </head>
+
+  <body style="width: 100%; margin-left: 0px; margin-top: 0px;">
+    <header class="site-header">
+      <nav>
+        <div class="title-head">
+          <h2>
+            <img
+              src="logo-flag.png"
+              alt="India Flag"
+              height="30"
+              width="40"
+              style="margin-top: 15px;"
+            />
+            COVID-19:Survey of India
+          </h2>
+          <!--<input type="text" placeholder="Search..">
+			<button type="submit">search</button>-->
+        </div>
+        <div class="head">
+          <!--<input type="text" placeholder="Search..">
+			<button type="submit">search</button>-->
+          <ul>
+            <li><a class="active" href="demo5project.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div style="margin-top: 20px; margin-left: 20px;">
+      <form action="" method="">
+        <label for="name">First Name:</label>
+        <input type="name" placeholder="First name" />
+        <br />
+        <br />
+        <label for="name">Last Name:</label>
+        <input type="name" placeholder="Last Name" />
+        <br />
+        <br />
+        <label for="number">Mobile number:</label>
+        <input type="number" placeholder="10-Digit number" />
+        <br />
+        <br />
+        <label for="email">Email Adress:</label>
+        <input type="number" placeholder="xxysteywg@gmail.com" />
+        <br />
+        <br />
+        <label for="Adress">Address:</label>
+        <br />
+        <textarea name="" id="" cols="50" rows="5"></textarea>
+        <br />
+        <br />
+        <p>Have you visited this side earlier?</p>
+        <input type="radio" name="name" id="" /> Yes
+        <input type="radio" name="name" id="" /> No
+        <br />
+        <br />
+        <p>How you like our website?</p>
+        <input type="radio" name="name" id="" /> Good
+        <input type="radio" name="name" id="" /> Average
+        <input type="radio" name="name" id="" /> Poor
+        <br />
+        <br />
+        <p>Who refer you to visit this site?</p>
+        <input type="radio" name="name" id="" /> Link from other website
+        <input type="radio" name="name" id="" /> Via Search Engine
+        <input type="radio" name="name" id="" /> My friend/teacher
+        <br />
+        <br />
+        <input type="checkbox" value="" name" name="" id="">I have an unsolved
+        query related to Survey of India
+        <br />
+        <br />
+        <input type="checkbox" value="" name" name="" id=""> I have my valuable
+        detailed comments for Survey of India
+        <br />
+        <br />
+        <p>Your Feedback/Suggestions:</p>
+        <textarea name="" id="" cols="40" rows="5"></textarea>
+        <br />
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+    <br />
+    <br />
+    <h4 id="foot" style="text-align: center;">Last Updated on 27-05-2020</h4>
+    <h4 style="text-align: center;">
+      <a href="demo5project.html" target="blank">Home</a> &ensp; &ensp;
+      <a href="feedback.html" target="blank">Feedback</a>&ensp; &ensp;
+      <a href="contact.html" target="blank">Contact us</a>&ensp; &ensp;
+      <a href="copyright.html" target="blank">&copy; copyright</a>
+    </h4>
+    <h6 style="text-align: center;">
+      &copy; Official website of Survey of India 2019.
+    </h6>
+  </body>
+</html>

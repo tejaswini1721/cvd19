@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+	<title>Registration form</title>
+	<style type="text/css">
+		header {
+			width: 100%;
+			height: 12vh;
+			background: linear-gradient(57deg, #00c6a7, #1e4d92);
+		}
+
+		div.head {
+			float: right;
+		}
+
+		div.title-head {
+			padding: 5px 5px;
+			padding-left: 25px;
+		}
+
+		nav {
+			display: flex;
+		}
+
+		div.title-head {
+			width: 40%;
+			height: 100px;
+
+		}
+
+		div.head {
+			width: 60%;
+			height: 100px;
+		}
+
+		div.head ul {
+			width: 100%;
+			height: 100px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+		}
+
+		ul {
+			list-style-type: none;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 15px
+		}
+
+		ul li a {
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid transparent;
+			transition: 0.6s ease;
+		}
+
+		ul li a:hover {
+			background-color: #fff;
+			color: #000;
+		}
+
+		div.second {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around
+		}
+
+		div.dashboard {
+			margin: 25px;
+			color: gray;
+		}
+
+		div.active {
+			width: 200px;
+			height: 100px;
+
+			background: linear-gradient(57deg, red, yellow);
+			padding: 10px 10px 15px 15px;
+			text-align: center;
+			border-radius: 8px;
+			margin: 0;
+		}
+
+		div.cured {
+			width: 200px;
+			height: 100px;
+			background: linear-gradient(57deg, green, yellow);
+			padding: 10px 10px 15px 15px;
+			text-align: center;
+			border-radius: 8px;
+			margin: 0;
+		}
+
+		div.deaths {
+			width: 200px;
+			height: 100px;
+
+			background: linear-gradient(57deg, blue, yellow);
+			padding: 10px 10px 15px 15px;
+			text-align: center;
+			border-radius: 8px;
+			margin: 0;
+		}
+	</style>
+	<!--CSS file link-->
+	<link rel="stylesheet" href="text1.css">
+</head>
+
+<body style="width: 100%;margin-left: 0px;margin-top: 0px">
+	<header class="site-header">
+		<nav>
+		<div class="title-head">
+			<h2><img src="logo-flag.png" alt="India Flag" height="30" width="40" style="margin-top: 15px" />
+				COVID-19:Survey of India
+			</h2>
+				<!--<input type="text" placeholder="Search..">
+			<button type="submit">search</button>-->
+			</div>
+			<div class="head">
+				<!--<input type="text" placeholder="Search..">
+			<button type="submit">search</button>-->
+				<ul>
+					<li><a class="active" href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+			</div>
+
+		</nav>
+	</header>
+	<br>
+	<br>
+<form>
+<fieldset>
+<legend>Personal Information for corona</legend><br>
+	<label for="fname">First name:</label>
+	<input type="text" name="fname" autofocus>
+	<br>
+	<br>
+	<label for="lname">Last name:</label>
+	<input type="text" name="lname"><br>
+	
+	<label for="Gender">Gender:</label><br>
+	<input type="radio" id="radio" name="Gender" value="Male">Male<br>	
+	<input type="radio" id="radio" name="Gender" value="Female">Female<br>
+	<input type="radio" id="radio" name="Gender" value="Other">Other<br>
+	<label for="Age">Enter your age:</label>
+	<br>
+	<input type="number" name="Age">
+	<br>
+	<br>
+	<div>
+	<label for="nationality">Nationality:</label>
+	<select id="Nationality" name="Nationality">
+	<option value="Indian">Indian</option>
+	</select>
+	<br>
+	</div>
+	<br>
+	
+	<label for="address">Address:</label>
+	<input type="text" name="address" style="width:500px; height:100px"><br>
+	<br>
+
+                 <label for="Email-Id">Email_Id:</label>
+	<input type="text" name="Email_Id" autofocus><br><br>
+	<label for="mob no">Mobile No:</label>
+	<input type="Number" name="mob no."><br>
+	
+	
+
+</fieldset>
+	<br>
+
+<fieldset>
+	<legend>CORONA SYMPTOMS</legend><br>
+	If you feel below symptoms then click on that symptoms :<br>
+	<br>
+	<br>
+	<input type="radio" id="radio" value="Fever">Fever	
+	<input type="radio" id="radio" value="nose running">nose runnig
+	<input type="radio" id="radio" value="Headache">Headache
+	<input type="radio" id="radio" value="Snezzing">Snezzing
+                <input type="radio" id="radio" value="Cough">cough
+	<input type="radio" id="radio" value="Sore Throat">Sore Throat
+                <input type="radio" id="radio" value="aches and pains">aches and pains
+</fieldset>
+<br>
+
+<fieldset>
+<legend>Current Medication</legend><br>
+<p>Are you currently taking any medication</p>
+<input type="radio" id="yes" name="choice" value="yes">
+<label for ="yes">Yes</lable>
+<input type="radio" id="no" name="choice" value="no"><label for ="no">No</lable><br>
+
+<p>If you are currently taking medication,please indicate it in the space below:</p>
+<input type="text" style="width:500px; height:100px"><br>
+</fieldset>	
+  <input type="submit">
+<input type="reset">
+
+</form>
+<!--Footer-->
+<h4 id="foot" style="text-align: center;">Last Updated on 27-05-2020</h4>
+<br>
+<h4 style="text-align: center;">
+	<a href="demo5project.html" target="blank">Home</a> &ensp; &ensp;
+	<a href="feedback.html" target="blank">Feedback</a>&ensp; &ensp;
+	<a href="contact.html" target="blank">Contact us</a>&ensp; &ensp;
+	<a href="copyright.html" target="blank">&copy; copyright</a>
+</h4>
+<h6 style="text-align: center;">
+	&copy; Official website of Survey of India 2019.
+</h6>
+</body>
+</html>	
+	
